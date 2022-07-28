@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import './Simulator.css';
+import Head from './Header';
+import Showcase from './Showcase';
 import './App.css';
+import Opener from './Crate-section/Opener';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Head></Head>
+      <Opener></Opener>
+      <Showcase></Showcase>
     </div>
   );
 }
