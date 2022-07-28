@@ -4,6 +4,8 @@ body {
     background-image: url(/src/img/bg.jpg);
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
 }
 
 .header {
@@ -15,6 +17,8 @@ body {
     backdrop-filter: blur(10px);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+
 
 .logo {
     align-self: center;
@@ -47,29 +51,54 @@ img {
     margin-bottom: 10px;
 }
 
-.items {
-  justify-content: center;
-  display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(5, 1fr);
-gap: 10px;
-}
+
 
 .items img{
-  height: 200px;
+  height: 180px;
   width: 200px;
+  padding: 10px;
   background-color: #00000036;
   backdrop-filter: blur(10px);
+} 
+
+.lowdiv, .middiv, .highdiv {
+  display: inline;
+
+  margin-left: 10px;
+}
+
+.lowdiv img , .middiv img, .highdiv img {
+  margin: 10px;
+}
+
+h1 {
+  font-size: 60px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.lowdiv img {
+  background-color: rgba(24, 255, 62, 0.23);
+}
+
+.middiv img {
+  background-color: rgba(24, 82, 255, 0.23);
+}
+
+.highdiv img {
+  background-color: rgba(255, 174, 24, 0.23);
+}
+
+.opendiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
   .button {
-    margin: auto;
-    justify-self: center;
     font-size: 40px;
     font-family: 'Rajdhani', sans-serif;
-    text-align: center;
     color: #fff;
-    margin: 0 auto;
     width: 210px;
     height: 55px;
     background: linear-gradient(#1d7751, #0e382c);
@@ -79,7 +108,6 @@ gap: 10px;
     transition: .1s;
     transform: scale(1);
     cursor: pointer;
-    -webkit-user-select: none;
     box-shadow: 0 0 50px rgba(0,117,9,0.5);
     overflow: hidden;
   }

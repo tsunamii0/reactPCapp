@@ -1,17 +1,17 @@
-import { createRenderer } from "react-dom/test-utils";
+import ShowcaseLow from "./components/Lowshow";
+import ShowcaseMid from "./components/Midshow";
+import ShowcaseHigh from "./components/Highshow";
 
 const Showcase = () => {
-    console.log("here")
-    const newarr = Array.from({ length: 17 })
-    console.log(newarr)
-    return(<div className="items">
-    {newarr.map((_, index) => {
-        console.log(index)
-        return (
-        <img src={require(`/src/content/${index}.png`)} key={index} />
+        return (<div>
+        <h1>LOW SPEC (52.9%)</h1>
+        <ShowcaseLow></ShowcaseLow>
+        <h1>MID SPEC (29.4%)</h1>
+        <ShowcaseMid></ShowcaseMid>
+        <h1>HIGH SPEC (17.6%)</h1>
+        <ShowcaseHigh></ShowcaseHigh>
+        </div>
         )
-      })}
-      </div>)
   };
   
   export default Showcase;

@@ -25,7 +25,7 @@ const PartPicker = () => {
 
 
   return (
-    <div>
+    <div className='opendiv'>
       <h1 className='cash'>Balance: ${cash}</h1>
       <img src={require(`/src/content/${num}.png`)}></img><br></br>
       <button className='button' onClick={handleClick}>Open</button>
